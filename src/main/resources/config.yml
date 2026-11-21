@@ -1,0 +1,24 @@
+# Oficjalny plugin nagród — https://najlepszeserverymc.pl
+# Token generujesz w panelu: Edytuj serwer → Plugin nagród
+
+api-url: "https://najlepszeserverymc.pl/api/v1/plugin"
+token: "WSTAW_TOKEN_Z_PANELU"
+
+# Jak często odpytywać API (sekundy). Minimum 5.
+poll-interval-seconds: 15
+
+# Ile głosów pobierać naraz
+batch-size: 50
+
+# Komendy uruchamiane jako konsola. Placeholdery: %player%
+commands:
+  - "say %player% zagłosował na najlepszeserverymc.pl — dzięki!"
+  # - "give %player% diamond 1"
+  # - "eco give %player% 500"
+
+# Gdy gracz jest offline, nagroda czeka w kolejce API do jego wejścia.
+# Lokalnie nic nie gubimy — claim dopiero po udanym wykonaniu komend.
+
+messages:
+  rewarded: "&aDzięki za głos na &fhttps://najlepszeserverymc.pl&a!"
+  prefix: "&8[&aNSMC&8]&r "

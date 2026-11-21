@@ -1,0 +1,16 @@
+name: NajlepszeServeryMC-Rewards
+version: ${project.version}
+main: pl.najlepszeserverymc.rewards.RewardsPlugin
+api-version: "1.20"
+author: Najlepszeserverymc
+website: https://najlepszeserverymc.pl
+description: Nagrody za głosy z najlepszeserverymc.pl
+commands:
+  nsmcrewards:
+    description: Zarządzanie pluginem nagród Najlepszeserverymc
+    usage: /nsmcrewards <reload|status|test> [nick]
+    permission: nsmcrewards.admin
+permissions:
+  nsmcrewards.admin:
+    description: Komendy administracyjne pluginu
+    default: op
